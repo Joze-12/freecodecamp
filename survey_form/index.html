@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Interest Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Career Interest Survey</h1>
+    <p id="description">Complete our Career Interest Survey to help you find the career best suited for you.</p>
+    <form id="survey-form">
+
+      <label id="name-label">Full Name <input type="text" id="name" placeholder="Enter your name" required /></label>
+      <label id="email-label">Email <input type="email" id="email" placeholder="Enter your Email" required /></label>
+      <label id="number-label">Age <input type="number" id="number" placeholder="Age" required min="18" max="60" /></label>
+      
+      <p>Gender</p>
+      <select id="dropdown">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <p>What is your current career? Does it match your dream career?</p>
+      <textarea cols="55" rows="5"></textarea>
+
+      <p>What are your career goals as of now?</p>
+      <textarea cols="55" rows="5"></textarea>
+
+      <p>If you had the chance to change your current career field, would you do it?</p>
+      <label><input type="radio" name="career-change" value="yes" /> Yes</label>
+      <label><input type="radio" name="career-change" value="no" /> No</label>
+      
+      <p>Fields you are interested in:</p>
+      <label><input type="checkbox" name="interest" value="mathematics" /> Mathemtatics</label>
+      <label><input type="checkbox" name="interest" value="agriculture" /> Agriculture</label>
+      <label><input type="checkbox" name="interest" value="it-programming" /> IT Programming</label>
+      <label><input type="checkbox" name="interest" value="l" /> Law</label>
+      <label><input type="checkbox" name="interest" value="politics" /> Politics</label>
+      <label><input type="checkbox" name="interest" value="education" /> Education</label>
+      <label><input type="checkbox" name="interest" value="marketing" /> Marketing</label>
+      <label><input type="checkbox" name="interest" value="business" /> Business</label>
+      <label><input type="checkbox" name="interest" value="journalism" /> Journalism</label>
+      <label><input type="checkbox" name="interest" value="psychology" /> Psychology</label>
+
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+  </body>
+</html>
